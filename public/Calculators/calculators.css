@@ -1,0 +1,54 @@
+/* Calculator Section Styles */
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Calculator Title Styles */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0077b6;
+}
+
+/* Input Field Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Calculate Button Styles */
+button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Result Display Styles */
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Invalid Input Styles */
+#bmi-result:empty::before {
+    content: "Invalid input";
+    color: red;
+}

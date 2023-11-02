@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Content with Two-Column Layout</title>
+    <link rel="stylesheet" href="css/animated.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sitesprite.css">
+    <style>
+        /* Custom CSS styles */
+        .content-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px; /* Adjust the space between columns */
+        }
+        .content-entry {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .content-title {
+            font-size: 24px;
+            color: #333;
+        }
+        .content-image-container {
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+        }
+        .content-image {
+            width: 100%;
+            height: auto;
+        }
+        .content-description {
+            color: #666;
+        }
+        .remove-button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+    <header class="s-header clearfix container s-section-sm">
+        <a href="lindex.html" class="s-logo clearfix">
+            <img src="img/homeImg.png" alt="HealthLink">
+            <div class="s-slogan">
+                Improve health and well being through communication, collaboration, and compliance
+            </div>
+        </a>
+
+        <span class="s-header-hamburger visible-xs">
+                <span class="icon icon-s-menu-hamburger"></span>
+            </span>
+
+        <nav class="s-navbar clearfix">
+            <div class="s-user-links clearfix">
+                                    <div id="navbar-user-not-logged-in" class="clearfix">
+                        <a href="ljoin.html" class="btn">Join us</a>
+                        <a href="login.html" class="btn btn-gray">Login</a>
+                    </div>
+                                            </div>
+            <ul class="s-menu clearfix">
+                                    <li class="s-dropdown blue">
+                        <a href="lindex.html" class="btn btn-lg">Health Zone</a>
+                        <ul class="s-dropdown-menu">
+                                                            <li><a href="calci.html">Calculators</a></li>
+                                                            <li><a href="education@page=1.html">Education</a></li>
+                                                    </ul>
+                    </li>
+                                    <li class="s-dropdown blue">
+                        <a href="social-network.html" class="btn btn-lg">Social Network</a>
+                        <ul class="s-dropdown-menu">
+                                                    </ul>
+                    </li>
+					<li class="s-dropdown ">
+                        <a href="challenges1.html" class="btn btn-lg">Challenges</a>
+                        <ul class="s-dropdown-menu">
+                                                    </ul>
+                    </li>
+					<li class="s-dropdown green">
+                        <a href="about" class="btn btn-lg">About Us</a>
+                        <ul class="s-dropdown-menu">
+                                                    </ul>
+                    </li>
+                                    <li class="s-dropdown purple">
+                        <a href="index.html" class="btn btn-lg">Support</a>
+                        <ul class="s-dropdown-menu">
+                                                            <li><a href="help-center">Help center</a></li>
+                                                            <li><a href="terms">Terms Of Service</a></li>
+                                                            <li><a href="privacy">Privacy Policy</a></li>
+                                                            <li><a href="contact">Contact us</a></li>
+                                                    </ul>
+                    </li>
+                            
+        </nav>
+    </header>
+    <section class="fluid-container s-section s-page-banner blogpage-banner section-with-subtitle-out-of-banner">
+		<h1 class="title ">Your Health Matters – The HealthLink Health & Wellness Education Library</h1>
+		<p class="subtitle">Check out the latest and most important education posts</p>
+	</section>
+	<p class="subtitle-2 subtitle-out-of-banner">Browse through our health and wellness articles on a wide variety of important topics, so you can be informed and make better choices for you and your family. We cover everything from how to use <a href="education/use-health-calculators-to-jump-start-your-health-and-wellness-goals">online health calculators</a> to choose which food for your fitness journey and many <a href="medical-cannabis@page=1">important topics</a> in between. Join the discussion and be part of the HealthLink community.</p>
+	<section class="fluid-contaier s-section newspage-slider-section m-padding-top-0">
+		<div class="container s-slider newspage-slider">
+							<div class="s-slider-item newspage-slider-item" 
+					 style="background-image: url(files/eggs.jpg);"
+					 >
+					<div class="newspage-slider-header">
+												<a href="education/understanding-peripheral-artery-disease" class="title">18 of the Best Foods for Your Healthy Weight Journey</a>
+						<div class="meta">
+																													<div class="author"></div>
+						</div>
+					</div>
+				</div>
+							<div class="s-slider-item newspage-slider-item" 
+					 style="background-image: url(files/doctors.jpg);"
+					 >
+					<div class="newspage-slider-header">
+												<a href="education/4-fast-facts-about-obesity" class="title">18 of the Best Foods for Your Healthy Weight Journey</a>
+						<div class="meta">
+																													<div class="author"></div>
+						</div>
+					</div>
+				</div>
+							<div class="s-slider-item newspage-slider-item" 
+					 style="background-image: url(files/food.jpg);"
+					 >
+					<div class="newspage-slider-header">
+												<a href="education/understanding-treatment-options-for-ischemic-stroke" class="title">18 of the Best Foods for Your Healthy Weight Journey</a>
+						<div class="meta">
+																													<div class="author"></div>
+						</div>
+					</div>
+				</div>
+							<div class="s-slider-item newspage-slider-item" 
+					 style="background-image: url(files/gym.jpg);"
+					 >
+					<div class="newspage-slider-header">
+												<a href="education/defining-and-diagnosing-ischemic-stroke" class="title">18 of the Best Foods for Your Healthy Weight Journey</a>
+						<div class="meta">
+																													<div class="author"></div>
+						</div>
+					</div>
+				</div>
+							<div class="s-slider-item newspage-slider-item" 
+					 style="background-image: url(files/heart.jpg);"
+					 >
+					<div class="newspage-slider-header">
+												<a href="education/insulin-therapy-for-type-2-diabetes" class="title">18 of the Best Foods for Your Healthy Weight Journey</a>
+						<div class="meta">
+																													<div class="author"></div>
+						</div>
+					</div>
+				</div>
+							<div class="s-slider-item newspage-slider-item" 
+					 style="background-image: url(files/machines.jpg);"
+					 >
+					<div class="newspage-slider-header">
+												<a href="education/health-risks-associated-with-high-cholesterol" class="title">18 of the Best Foods for Your Healthy Weight Journey</a>
+						<div class="meta">
+																													<div class="author"></div>
+						</div>
+					</div>
+				</div>
+							<div class="s-slider-item newspage-slider-item" 
+					 style="background-image: url(files/medicine.jpg);"
+					 >
+					<div class="newspage-slider-header">
+												<a href="education/important-facts-about-high-blood-pressure-or-hypertension" class="title"></a>
+						<div class="meta">
+																													<div class="author"></div>
+						</div>
+					</div>
+				</div>
+							<div class="s-slider-item newspage-slider-item" 
+					 style="background-image: url(files/running.jpg);"
+					 >
+					<div class="newspage-slider-header">
+												<a href="education/4-facts-to-help-you-better-understand-type-2-diabetes" class="title">18 of the Best Foods for Your Healthy Weight Journey</a>
+						<div class="meta">
+																													<div class="author"></div>
+						</div>
+					</div>
+				</div>
+							<div class="s-slider-item newspage-slider-item" 
+					 style="background-image: url(files/sun.jpg);"
+					 >
+					<div class="newspage-slider-header">
+												<a href="education/important-facts-about-chronic-obstructive-pulmonary-disease-copd" class="title">18 of the Best Foods for Your Healthy Weight Journey</a>
+						<div class="meta">
+																													<div class="author"></div>
+						</div>
+					</div>
+				</div>
+							<div class="s-slider-item newspage-slider-item" 
+					 style="background-image: url(files/variousfood.jpg);"
+					 >
+					<div class="newspage-slider-header">
+												<a href="education/important-facts-about-congestive-heart-failure" class="title">18 of the Best Foods for Your Healthy Weight Journey</a>
+						<div class="meta">
+																													<div class="author"></div>
+						</div>
+					</div>
+				</div>
+			
+			<div class="s-slider-pagination newspage-slider-pagination"></div>
+		</div>
+	</section>
+
+</head>
+<body>
+    <h1>Add Content</h1>
+    <form id="contentForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required><br>
+        
+        <label for="image">Image:</label>
+        <input type="file" id="image" accept="image/*" required><br>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea><br>
+        
+        <button type="button" onclick="addContent()">Add Content</button>
+    </form>
+    
+    <div id="contentContainer" class="content-container"></div>
+    
+    <script>
+        function addContent() {
+            var title = document.getElementById("title").value;
+            var imageInput = document.getElementById("image");
+            var description = document.getElementById("description").value;
+
+            if (imageInput.files.length > 0) {
+                var imageFile = imageInput.files[0];
+                
+                var content = {
+                    title: title,
+                    image: URL.createObjectURL(imageFile),
+                    description: description
+                };
+                
+                var existingContent = JSON.parse(localStorage.getItem('content') || '[]');
+                existingContent.push(content);
+                localStorage.setItem('content', JSON.stringify(existingContent));
+                
+                renderContent();
+                
+                document.getElementById("title").value = "";
+                imageInput.value = "";
+                document.getElementById("description").value = "";
+            }
+        }
+
+        function removeContent(index) {
+            var existingContent = JSON.parse(localStorage.getItem('content') || '[]');
+            existingContent.splice(index, 1);
+            localStorage.setItem('content', JSON.stringify(existingContent));
+            renderContent();
+        }
+        function updateContent(index) {
+            var existingContent = JSON.parse(localStorage.getItem('content') || '[]');
+            var title = prompt('Enter a new title:', existingContent[index].title);
+            if (title === null) return; // Cancel button was clicked
+            var description = prompt('Enter a new description:', existingContent[index].description);
+            if (description === null) return;
+            
+            existingContent[index].title = title;
+            existingContent[index].description = description;
+            localStorage.setItem('content', JSON.stringify(existingContent));
+            renderContent();
+        }
+
+        function renderContent() {
+            var contentContainer = document.getElementById("contentContainer");
+            contentContainer.innerHTML = "";
+
+            var contentArray = JSON.parse(localStorage.getItem('content') || '[]');
+
+            contentArray.forEach(function (content, index) {
+                var contentDiv = document.createElement("div");
+                contentDiv.classList.add("content-entry");
+
+                var contentTitle = document.createElement("h2");
+                contentTitle.classList.add("content-title");
+                contentTitle.textContent = content.title;
+
+                var contentImageContainer = document.createElement("div");
+                contentImageContainer.classList.add("content-image-container");
+
+                var contentImage = document.createElement("img");
+                contentImage.classList.add("content-image");
+                contentImage.src = content.image;
+
+                var contentDescription = document.createElement("p");
+                contentDescription.classList.add("content-description");
+                contentDescription.textContent = content.description;
+
+                var removeButton = document.createElement("button");
+                removeButton.classList.add("remove-button");
+                removeButton.textContent = "Remove";
+                removeButton.onclick = function () {
+                    removeContent(index);
+                };
+
+                contentImageContainer.appendChild(contentImage);
+                contentDiv.appendChild(contentTitle);
+                contentDiv.appendChild(contentImageContainer);
+                contentDiv.appendChild(contentDescription);
+                contentDiv.appendChild(removeButton);
+                contentDiv.appendChild(updateButton);
+
+                contentContainer.appendChild(contentDiv);
+            });
+        }
+
+        renderContent();
+    </script>
+
+<nav class="s-section text-center">
+    <ul class="pagination pagination-lg">
+    <li><a href="education@page=1.html">First</a></li>
+<li><a href="education@page=1.html">Previous</a></li>
+<li><a href="education@page=1.html">1</a></li>
+<li><a href="education@page=2.html">2</a></li>
+<li><a href="education@page=3.html">3</a></li>
+<li><a href="education@page=4.html">4</a></li>
+<li class="active"><a href="education@page=2.html">2</a></li>
+<li><a href="education@page=3.html">Next</a></li>
+<li><a href="education@page=4.html">Last</a></li>
+</ul>
+</nav>
+    <footer class="s-footer fluid-container s-section">
+        <nav class="container s-footer-menu">
+                            <ul class="s-footer-menu-item">
+                    <li><a href="lindex.html">Health Zone</a>
+                                            <li><a href="calci.html">Calculators</a></li>
+                                        <li><a href="education@page=1.html">Education</a></li>
+                                    </ul>
+                            <ul class="s-footer-menu-item">
+                    <li><a href="social-network">Social Network</a>
+                                        </ul>
+                       
+
+						    <ul class="s-footer-menu-item">
+				    <li><a href="challenges1.html">Challenges</a>
+										</ul>			
+                            <ul class="s-footer-menu-item">
+                    <li><a href="about">About Us</a>
+                                        </ul>
+                            <ul class="s-footer-menu-item">
+                    <li><a href="lindex.html">Support</a>
+                                            <li><a href="help-center">Help center</a></li>
+                                        <li><a href="terms">Terms Of Service</a></li>
+                                        <li><a href="privacy">Privacy Policy</a></li>
+                                        <li><a href="contact">Contact us</a></li>
+                                    </ul>
+                    </nav>
+        <div class="container">
+            <a href="lindex.html" class="s-footer-menu-logo hidden-xs">
+                <span class="icon icon-kw-footer-logo"></span>
+            </a>
+
+            <div class="rights-reserved hidden-xs">
+                Copyright © 2018 HealthLink, Inc. All Rights Reserved
+            </div>
+
+            <div class="rights-reserved visible-xs text-center">
+                © HealthLink 2018
+            </div>
+        </div>
+    </footer>   
+
+	
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/minified/site-common.min.js"></script>
+    <script src="assets/js/minified/site.min.js"></script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>BMI Calculator</h1>
+  <form id="bmiForm" action="/calculate-bmi" method="post">
+    Height (feet): <input type="number" name="heightFeet" step="1" required><br>
+    Height (inches): <input type="number" name="heightInches" step="1" required><br>
+    Weight (pounds): <input type="number" name="weightPounds" step="0.01" required><br>
+    <button type="submit">Calculate BMI</button>
+  </form>
+  <p>BMI: <span id="bmiResult"></span></p>
+
+  <h2>Previous Results</h2>
+  <table>
+    <tr>
+      <th>Height (Feet)</th>
+      <th>Height (Inches)</th>
+      <th>Weight (Pounds)</th>
+      <th>BMI</th>
+    </tr>
+    <% previousResults.forEach(function(result) { %>
+      <tr>
+        <td><%= result.heightFeet %></td>
+        <td><%= result.heightInches %></td>
+        <td><%= result.weightPounds %></td>
+        <td><%= result.bmi.toFixed(2) %></td>
+      </tr>
+    <% }); %>
+  </table>
+</body>
+</html>
+
+
